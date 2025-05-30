@@ -1,0 +1,103 @@
+<!-- NaSIA Inspection Web App -->
+
+<!-- PAGE 1: Login Page -->
+<div class="login-page">
+  <div class="login-card">
+    <img src="https://www.nasia.gov.gh/wp-content/uploads/logo-md.png" alt="NaSIA Logo" class="logo">
+    <h2>Inspector Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+  </div>
+</div>
+
+<!-- PAGE 2: Dashboard -->
+<div class="dashboard">
+  <header>
+    <img src="https://www.nasia.gov.gh/wp-content/uploads/logo-md.png" alt="Logo" class="logo">
+    <h1>Inspector Dashboard</h1>
+  </header>
+  <nav>
+    <button>Assigned Schools</button>
+    <button>New Inspection</button>
+    <button>Reports</button>
+    <button>Logout</button>
+  </nav>
+</div>
+
+<!-- PAGE 3: Assigned Schools List -->
+<div class="school-list">
+  <h2>My Assigned Schools</h2>
+  <input type="text" placeholder="Search by School Name or District">
+  <table>
+    <thead>
+      <tr><th>School Name</th><th>District</th><th>Region</th><th>Status</th><th>Action</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Example School</td><td>Kasoa</td><td>Central</td><td>Not Visited</td><td><button>Start</button></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PAGE 4: Inspection Form (Step-based) -->
+<div class="inspection-form">
+  <h2>School Inspection - Step 1 of 3</h2>
+
+  <label>School Name:</label>
+  <input type="text">
+
+  <label>Region:</label>
+  <select><option>Central</option><option>Eastern</option></select>
+
+  <label>District:</label>
+  <input type="text">
+
+  <label>School Type:</label>
+  <select><option>ICS</option><option>NCS</option><option>SPS</option></select>
+
+  <label>Date of Visit:</label>
+  <input type="date">
+
+  <button>Next</button>
+</div>
+
+<!-- PAGE 5: Teaching & Learning Observation -->
+<div class="form-step">
+  <h2>Teaching & Learning Observation - Step 2 of 3</h2>
+
+  <label>English Lesson Observation:</label>
+  <textarea></textarea>
+
+  <label>Math Lesson Observation:</label>
+  <textarea></textarea>
+
+  <label>Teacher Qualification:</label>
+  <input type="text">
+
+  <label>Student Enrollment (by Gender):</label>
+  <input type="text">
+
+  <label>Upload Photo:</label>
+  <input type="file">
+
+  <button>Next</button>
+</div>
+
+<!-- PAGE 6: Summary and Submit -->
+<div class="form-summary">
+  <h2>Summary - Step 3 of 3</h2>
+  <p>Review all entries here...</p>
+  <button>Submit Inspection</button>
+</div>
+
+<style>
+body { font-family: Arial; background: #f5f7fa; margin: 0; padding: 0; }
+.logo { height: 60px; margin-bottom: 10px; }
+.login-card, .dashboard, .school-list, .inspection-form, .form-step, .form-summary {
+  background: #fff; padding: 20px; border-radius: 10px; max-width: 700px; margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+input, select, textarea, button { width: 100%; padding: 10px; margin: 10px 0; }
+button { background: #005baa; color: white; border: none; cursor: pointer; }
+button:hover { background: #003d7a; }
+</style>
